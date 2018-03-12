@@ -1,0 +1,173 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  min-width: 320px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 30px; }
+
+p {
+  margin: 0 0 20px; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul:after {
+    clear: both;
+    display: block;
+    content: ''; }
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px 20px; }
+  .container:after {
+    clear: both;
+    display: block;
+    content: ''; }
+
+.header-top {
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+  padding: 40px 0; }
+  .header-top h1 {
+    font-size: 100px; }
+  .header-top ul:after {
+    clear: both;
+    display: block;
+    content: ''; }
+  .header-top li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative; }
+    .header-top li:first-child:before {
+      display: none; }
+
+.menu-block {
+  background: black;
+  padding: 20px 0;
+  opacity: .8;
+  text-align: center; }
+  .menu-block li {
+    display: inline-block;
+    vertical-align: top; }
+  .menu-block a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 30px;
+    color: #fff; }
+
+.top-block {
+  background: url(../images/gold.jpg); }
+
+.main-content {
+  padding: 50px 0 150px 0; }
+  .main-content .title-holder {
+    text-align: center;
+    padding: 20px 0; }
+  .main-content h1 {
+    font-weight: bolder;
+    color: #ae9b3c; }
+
+.filtr-container:after {
+  clear: both;
+  display: block;
+  content: ''; }
+
+.filtr-container .filtr-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.333%;
+  float: left; }
+
+.filtr-container .image-front {
+  opacity: 1;
+  visibility: visible; }
+
+.filtr-container .image-back {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.filtr-container .inner {
+  -webkit-transition: all ease-out .5s 0s;
+          transition: all ease-out .5s 0s;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9); }
+
+.filtr-container .image-holder:hover .image-front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  opacity: 0;
+  visibility: hidden; }
+
+.filtr-container .image-holder:hover .image-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 20px; }
+
+.simplefilter li {
+  font-size: 12px !important; }
+
+.filtr-item {
+  padding: 20px 10px 0 0; }
+
+.item-desc {
+  bottom: 0;
+  left: 0;
+  right: 20px; }
+
+.new-arrivals {
+  padding: 140px 0;
+  background: #e6e6e6; }
+  .new-arrivals .arrivals-top-block {
+    text-align: center; }
+  .new-arrivals h1 {
+    font-weight: bolder; }
+  .new-arrivals .og-color {
+    color: orange; }
+  .new-arrivals .arrivals-bottom-block .inner {
+    padding: 10px;
+    overflow: hidden; }
+    .new-arrivals .arrivals-bottom-block .inner:hover img {
+      -webkit-transform: scale(2);
+          -ms-transform: scale(2);
+              transform: scale(2);
+      -webkit-transition: all ease-in-out 2.2s;
+              transition: all ease-in-out 2.2s; }
+    .new-arrivals .arrivals-bottom-block .inner img {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+.top-header{
+  background: red;
+  color: white;
+  font-weight: bolder;
+}
+.navbar{
+  padding: 10px 0px;
+}
+.slide-pic{
+  background: red;
+}
+
+marquee{
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.content{
+  background: #808080;
+  padding: 20px 0px;
+}
+.content2{
+  background: red;
+  margin-top: 20px;
+}
+
+.button-gap{
+  padding-top: 30px;
+}
+
+
+.whole{
+  background-color: springgreen;
+}
+.jumbotron{
+  background-color: orange;
+}

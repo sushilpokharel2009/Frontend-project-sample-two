@@ -1,0 +1,84 @@
+.banner {
+
+	padding: 140px 0;
+	@include background-color;
+	position: relative;
+	padding: 100px 0 0; 
+	.jumbotron {
+		background: transparent;
+		color: #fff;
+	}
+
+	h1 {
+		font-size: 70px;
+		font-weight: bolder;
+	}
+
+	h3 {
+		font-size: 15px;
+	}
+
+	p {
+		max-width: 420px;
+		margin: 0 auto;
+	}
+	
+	.anchor-buttons {
+		@include clearfix;
+		margin: 30px 0;
+	}
+	.read,.purchase {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	a {
+		padding: 15px;
+		display: inline-block;
+		border: 1px solid #fff;
+	}
+
+	.btn-light {
+		background:#fff;
+		margin-right: 15px;
+		color: darken(#000, 30%);
+		font-weight: bolder;
+	}
+
+	.btn-green {
+		font-weight: bolder;
+		color: #fff;
+	}
+
+
+	@media (max-width: 991px){
+		padding: 50px 0;
+
+		h1 {
+			font-size: 50px;
+		}
+	}
+
+	@media (max-width:767px){
+		h1 {
+			font-size: 40px;
+		}
+	}
+
+	@media (max-width: 576px){
+		.read,.purchase {
+			display: block;
+			margin: 20px;
+		}
+
+		h1 {
+			font-size: 45px;
+		}
+
+		.btn-light, .btn-green {
+			width: 100%;
+		}
+	}
+}
+
+

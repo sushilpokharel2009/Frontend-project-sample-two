@@ -1,0 +1,19 @@
+.menu-block {
+	background: darken(#000,100%);
+	padding: 20px 0;
+	opacity: .8;
+	text-align: center;
+
+
+	li {
+		@include list-reset;
+
+	}
+
+	a {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 30px;
+		color: #fff;
+	}
+}

@@ -1,0 +1,63 @@
+.filtr-container {
+	@include clearfix;
+	.filtr-item{
+		display: inline-block;
+		vertical-align: top;
+		width: 33.333%;
+		float: left;
+	}
+
+	.image-front {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.image-back {
+		opacity: 0;
+		visibility: hidden;
+		transform:rotate(180deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.inner {
+		transition:all ease-out .5s 0s;
+		// padding: 40px;
+		box-shadow: 0 0 5px 0 rgba(0,0,0,.9);
+	}
+	.image-holder:hover .image-front {
+		transform:rotateY(180deg);
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.image-holder:hover .image-back {
+		transform:rotateY(0deg);
+		opacity: 1;
+		visibility: visible;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		right: 20px;
+	}
+}
+
+.simplefilter li{
+		// padding: 10px !important;
+		font-size: 12px !important;
+	}
+
+	.filtr-item{
+		padding: 20px 10px 0 0;
+
+	}
+
+	.item-desc {
+		
+		bottom: 0;
+		left: 0;
+		right: 20px;
+		
+	}
+

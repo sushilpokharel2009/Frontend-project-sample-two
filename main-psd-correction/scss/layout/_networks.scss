@@ -1,0 +1,28 @@
+.network {
+
+	padding:70px 0;
+
+	a {
+		font-size: 50px;
+		color: green;
+	}
+
+	h3 {
+		font-size: 20px;
+		color:darken(#000, 50%);
+	}
+
+	p {
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	@media (max-width:767px){
+		padding: 40px 0;
+
+		p {
+			max-width: 100%;
+			
+		}
+	}
+}

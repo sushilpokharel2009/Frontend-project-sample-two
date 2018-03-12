@@ -1,0 +1,31 @@
+.header-top {
+	text-align: center;
+	color: #fff;
+	font-weight:bolder; 
+	padding: 40px 0;
+
+
+	h1 {
+		font-size: 100px;
+
+	}
+
+	ul {
+		@include clearfix;
+	}
+
+	li {
+		@include list-reset;
+		padding: 0 20px;
+		font-size: 20px;
+		position: relative;
+
+		&:first-child {
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+	
+}

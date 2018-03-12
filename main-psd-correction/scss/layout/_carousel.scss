@@ -1,0 +1,146 @@
+.carousels {
+
+	padding: 100px 0;
+
+	.carousel-item {
+		img {
+			width: 100%;
+		}
+	}
+
+
+	h3 {
+		font-size: 15px;
+		color:lighten(#333, 30%);
+	}
+
+	h1 {
+		font-family: Playfair Display;
+		font-weight: bolder;
+		color: darken(#000, 50%);
+	}
+
+	p {
+		max-width: 550px;
+		margin: 0 auto;
+		color:lighten(#333, 30%);
+	}
+
+	.carousel-title {
+		margin-bottom: 50px;
+	}
+
+	.col-md-4 {
+		transition: all linear .5s;
+		i {
+			padding: 20px;
+		}
+
+		&:hover {
+			box-shadow: 10px 5px 10px 20px rgba(0,0,0,.3);
+			border-top: 2px solid green;
+			max-width:30px;
+			margin: 0 auto;
+			padding-top: 10px;
+		}
+
+	}
+
+	.figures {
+			padding-top: 20px;
+			max-width: 200px;
+			margin: 0 auto;
+		.image {
+			float: left;
+			width: 20%;
+		}
+
+		.names {
+			float: right;
+			width: calc(100% - 20%);
+
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: darken(#000, 40%);
+
+			&:hover {
+				color:green;
+				
+			}
+
+		}
+	}
+
+
+.sliderindicator {
+	background: red;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+	.carousel-indicators {
+	  position: absolute;
+	  bottom: 10px;
+	  left: 50%;
+	  z-index: 15;
+	  width: 60%;
+	  padding-left: 0;
+	  margin-left: -30%;
+	  text-align: center;
+	  list-style: none;
+	}
+	.carousel-indicators li {
+		position: relative;
+	  display: inline-block;
+	  width: 1px;
+	  height: 1px;
+	  margin: 1px;
+	  text-indent: -999px;
+	  cursor: pointer;
+	  background-color: #000 \9;
+	  background-color: rgba(0, 0, 0, 0);
+	  border: 1px solid #fff;
+	  border-radius: 100%;
+	  background: #fff;
+
+	}
+
+	@media (max-width: 767px){
+		padding: 50px 0;
+
+
+		.col-md-4 {
+			i {
+				padding: 5px;
+			}
+		}
+
+		.carousel-title {
+			margin-bottom: 0;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
